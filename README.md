@@ -1,2 +1,7 @@
-# curriculo_Aurelio
-Currículo - Aurélio Carlos Prado Silva
+# Currículo - Aurélio Carlos Prado Silva
+
+Link para o [PDF](https://raw.githubusercontent.com/lelinho/curriculo_aurelio/master/curriculo.pdf)
+
+
+#### Créditos
+Desenvolvido em LaTeX utilizando o [Awesome Identity](https://github.com/posquit0/Awesome-CV).

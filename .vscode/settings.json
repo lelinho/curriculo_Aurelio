@@ -1,0 +1,23 @@
+{
+    "latex-workshop.latex.tools": [
+        {
+            "name": "xelatexmk",
+            "command": "latexmk",
+            "args": [
+                "-xelatex",
+                "-outdir=%OUTDIR%",
+                "%DOCFILE%"
+            ]
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        // let us suppose the first two recipes are Latexmk vanilla and 
+        // pdflatex twice for bibtex
+        {
+            "name": "latexmk (xelatex)",
+            "tools": [
+                "xelatexmk"
+            ]
+        }
+    ]    
+}
