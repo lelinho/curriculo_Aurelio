@@ -17,22 +17,6 @@ jobs:
 
       - uses: actions/upload-artifact@v2
         with:
-          name: AurelioCarlosPradoSilva_curriculo
-          path: "*.pdf"
+          name: AurelioCarlosPradoSilva_curriculo.pdf
+          path: "."
       
-      - name: Checkout
-        uses: actions/checkout@v2
-      - uses: actions/download-artifact@v2
-        with:
-          path: github_artifacts
-      
-      - name: move
-        run: mkdir -p github_deploy && mv github_artifacts/*/* github_deploy
-      
-      - name: deploy on orphan branch
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./github_deploy
-          publish_branch: build
-          force_orphan: true
