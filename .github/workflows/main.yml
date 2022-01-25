@@ -15,13 +15,13 @@ jobs:
       - name: Compilar e testar o LaTeX
         run: make
 
-      -name: Upload do artefato
+      - name: Upload do artefato
         uses: actions/upload-artifact@v2
         with:
           name: AurelioCarlosPradoSilva_curriculo.pdf
           path: "."
 
-      -name: Publicação do PDF
+      - name: Publicação do PDF
         uses: djnicholson/release-action@v2.11
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
