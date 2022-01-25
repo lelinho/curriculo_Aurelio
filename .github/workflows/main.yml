@@ -24,4 +24,4 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           asset-name: 'curriculo.pdf'
-          file: 'AurelioCarlosPradoSilva_curriculo.pdf'      
+          file: 'curriculo.pdf'
