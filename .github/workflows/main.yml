@@ -27,3 +27,10 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           asset-name: 'curriculo.pdf'
           file: 'curriculo.pdf'
+
+      - name: Publicação do PDF em inglês
+        uses: djnicholson/release-action@v2.11
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          asset-name: 'curriculo_EN.pdf'
+          file: 'curriculo_EN.pdf'          
