@@ -1,4 +1,4 @@
-name: Compile PDFs
+name: Compilar e publicar o PDF
 
 on:
   push: {}
@@ -9,18 +9,20 @@ jobs:
     container: thomasweise/texlive
 
     steps:
-      - name: Checkout repo
+      - name: Checkout no repositório
         uses: actions/checkout@v2
 
-      - name: Compile
+      - name: Compilar e testar o LaTeX
         run: make
 
-      - uses: actions/upload-artifact@v2
+      -name: Upload do artefato
+        uses: actions/upload-artifact@v2
         with:
           name: AurelioCarlosPradoSilva_curriculo.pdf
           path: "."
 
-      - uses: djnicholson/release-action@v2.11
+      -name: Publicação do PDF
+        uses: djnicholson/release-action@v2.11
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           asset-name: 'curriculo.pdf'
