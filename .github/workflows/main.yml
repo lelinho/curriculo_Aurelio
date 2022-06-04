@@ -6,7 +6,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: thomasWeise/docker-texlive-full
+    container: thomasWeise/texlive
+    volumes:
+      - ${{ github.workspace }}/fonts:/usr/share/fonts/external/    
 
     steps:
       - name: Checkout no repositório
