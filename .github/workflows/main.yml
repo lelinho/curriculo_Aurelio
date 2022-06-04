@@ -6,7 +6,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-20.04
-    container: thomasWeise/texlive    
+    container: thomasweise/texlive    
 
     steps:
       - name: Checkout no repositório
