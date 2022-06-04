@@ -5,9 +5,8 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    container: thomasWeise/texlive
-    options: -v ${{ github.workspace }}/fonts:/usr/share/fonts/external
+    runs-on: ubuntu-20.04
+    container: thomasWeise/texlive    
 
     steps:
       - name: Checkout no repositório
