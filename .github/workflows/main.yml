@@ -21,6 +21,15 @@ jobs:
           name: AurelioCarlosPradoSilva_curriculo.pdf
           path: "."
 
+      - name: Compilar em inglês e testar o LaTeX
+        run: make curriculo_EN.pdf
+
+      - name: Upload do artefato
+        uses: actions/upload-artifact@v2
+        with:
+          name: AurelioCarlosPradoSilva_curriculoEN.pdf
+          path: "."
+
       - name: Publicação do PDF
         uses: djnicholson/release-action@v2.11
         with:
