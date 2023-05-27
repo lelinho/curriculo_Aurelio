@@ -1,4 +1,4 @@
-.PHONY: curriculo
+.PHONY: curriculo.pdf curriculo_EN.pdf
 
 CC = xelatex
 DIR = .
