@@ -16,7 +16,7 @@ jobs:
         run: make
 
       - name: Upload do artefato
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: AurelioCarlosPradoSilva_curriculo.pdf
           path: "."
@@ -25,7 +25,7 @@ jobs:
         run: make curriculo_EN.pdf
 
       - name: Upload do artefato
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: AurelioCarlosPradoSilva_curriculoEN.pdf
           path: "."
