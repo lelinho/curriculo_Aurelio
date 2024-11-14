@@ -418,8 +418,8 @@
 \newcommand{\acvHeaderAfterQuoteSkip}{5mm}
 
 % Others
-\newcommand{\acvSectionTopSkip}{8mm}
-\newcommand{\acvSectionContentTopSkip}{5mm}
+\newcommand{\acvSectionTopSkip}{3mm}
+\newcommand{\acvSectionContentTopSkip}{2.5mm}
 
 
 %-------------------------------------------------------------------------------
@@ -655,6 +655,7 @@
 % Define an environment for cventry
 \newenvironment{cventries}{%
   \vspace{\acvSectionContentTopSkip}
+  \vspace{8mm}
   \begin{center}
 }{%
   \end{center}
