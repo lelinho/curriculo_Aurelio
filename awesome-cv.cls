@@ -698,7 +698,6 @@
       {}
       {\multicolumn{2}{L{17.0cm}}{\subdescriptionstyle{#4}} \\}
   \end{tabular*}
-  \vspace{3.0mm}
 }
 
 % Define an environment for cvhonor
@@ -747,7 +746,7 @@
 }{%
   \end{itemize}
   \end{justify}
-  \vspace{-4.0mm}
+  \vspace{2.0mm}
 }
 
 
