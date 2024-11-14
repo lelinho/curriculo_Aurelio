@@ -673,8 +673,7 @@
     \ifstrempty{#5}
       {}
       {\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}} \\}
-  \end{tabular*}%
-  \vspace{3.0mm}
+  \end{tabular*}%  
 }
 
 % Define an environment for cvsubentry
@@ -699,6 +698,7 @@
       {}
       {\multicolumn{2}{L{17.0cm}}{\subdescriptionstyle{#4}} \\}
   \end{tabular*}
+  \vspace{3.0mm}
 }
 
 % Define an environment for cvhonor
