@@ -662,7 +662,7 @@
 % Define an entry of cv information
 % Usage: \cventry{<position>}{<title>}{<location>}{<date>}{<description>}
 \newcommand*{\cventry}[5]{%
-  \vspace{3.0mm}
+  \vspace{-2.0mm}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
@@ -674,6 +674,7 @@
       {}
       {\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}} \\}
   \end{tabular*}%
+  \vspace{3.0mm}
 }
 
 % Define an environment for cvsubentry
